@@ -84,7 +84,7 @@ client.on("interactionCreate", async (interaction) => {
             const category = interaction.guild.channels.cache.find(c => c.topic === `Compra de Serviço => {${interaction.member.user.id}}`)
             if (category) return interaction.reply({ content: "Você já tem um ticket aberto!", ephemeral: true });
             const canal = await interaction.guild.channels.create(`🛒-${interaction.member.user.username}`, {
-                parent: "1032349106330402969", // Coloque o ID da Categoria de Tickets
+                parent: "1032400061088419941", // Coloque o ID da Categoria de Tickets
                 reason: `${interaction.user.tag} abriu um ticket!`,
                 type: "GUILD_TEXT",
                 topic: `Compra de Serviço => {${interaction.member.user.id}}`,
@@ -139,7 +139,7 @@ client.on("interactionCreate", async (interaction) => {
             const category = interaction.guild.channels.cache.find(c => c.topic === `Atendimento de Suporte => {${interaction.member.user.id}}`)
             if (category) return interaction.reply({ content: "Você já tem um ticket aberto!", ephemeral: true });
             const canal = await interaction.guild.channels.create(`🖐️-${interaction.member.user.username}`, {
-                parent: "1032349106330402969", // Coloque o ID da Categoria de Tickets
+                parent: "1032400061088419941", // Coloque o ID da Categoria de Tickets
                 reason: `${interaction.user.tag} abriu um ticket!`,
                 type: "GUILD_TEXT",
                 topic: `Atendimento de Suporte => {${interaction.member.user.id}}`,
@@ -194,7 +194,7 @@ client.on("interactionCreate", async (interaction) => {
             const category = interaction.guild.channels.cache.find(c => c.topic === `Aplicação para a Equipe da R3ady.Cloud => {${interaction.member.user.id}}`)
             if (category) return interaction.reply({ content: "Você já tem um ticket aberto!", ephemeral: true });
             const canal = await interaction.guild.channels.create(`👮‍♂️-${interaction.member.user.username}`, {
-                parent: "1032349106330402969", // Coloque o ID da Categoria de Tickets
+                parent: "1032400061088419941", // Coloque o ID da Categoria de Tickets
                 reason: `${interaction.user.tag} abriu um ticket!`,
                 type: "GUILD_TEXT",
                 topic: `Aplicação para a Equipe da R3ady.Cloud => {${interaction.member.user.id}}`,
@@ -258,7 +258,7 @@ client.on("interactionCreate", async (interaction) => {
             const category = interaction.guild.channels.cache.find(c => c.topic === `Fazendo Orçamento na R3ady.Cloud => {${interaction.member.user.id}}`)
             if (category) return interaction.reply({ content: "Você já tem um ticket aberto!", ephemeral: true });
             const canal = await interaction.guild.channels.create(`💳-${interaction.member.user.username}`, {
-                parent: "1032349106330402969", // Coloque o ID da Categoria de Tickets
+                parent: "1032400061088419941", // Coloque o ID da Categoria de Tickets
                 reason: `${interaction.user.tag} abriu um ticket!`,
                 type: "GUILD_TEXT",
                 topic: `Fazendo Orçamento na R3ady.Cloud => {${interaction.member.user.id}}`,
@@ -360,7 +360,7 @@ client.on("interactionCreate", async (interaction) => {
                     .setURL(haste)
                 )
                 //interaction.channel.send(haste); //ID CANAL LOG
-                client.channels.cache.get("1032349135338209310").send({ components: [haste_button], content: `<#${channel.id}> - *${channel.name}*
+                client.channels.cache.get("1027412438406156318").send({ components: [haste_button], content: `<#${channel.id}> - *${channel.name}*
 \`\`\`ansi
 [0;37m
 ====================== Registro de Auditoria. Ticket's ======================
