@@ -8,7 +8,6 @@ const config = require('../config');
  */
 
 module.exports.exec = (client, message, args) => {
-    if (!message.member.permissions.has("ADMINISTRATOR")) return message.reply({ content: `Sem permissão.` })
 
     let _btns = new MessageActionRow().addComponents(
         new MessageButton()
